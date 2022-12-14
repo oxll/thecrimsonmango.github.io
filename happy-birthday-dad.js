@@ -264,7 +264,7 @@ platforms.add(300, 0, 600, 22.5);
 platforms.add(300, 600, 600, 22.5);
 
 function draw() {
-  createCanvas(window.innerWidth - 10, window.innerHeight - 10);
+  createCanvas(window.innerWidth - 25, window.innerHeight - 25);
 
   background(0, 175, 25);
 
