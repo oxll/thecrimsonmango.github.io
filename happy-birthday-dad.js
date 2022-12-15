@@ -221,6 +221,9 @@ Dad.prototype.draw = function () {
     this.h / 18
   );
 
+  rect(this.x, this.y - this.h / 12, this.w / 3, this.h / 75);
+  rect(this.x, this.y - this.h / 20, this.w / 3, this.h / 75);
+
   stroke(0, 0, 0);
   strokeWeight(this.w / 20);
   point(this.x - this.w / 5, this.y - this.h / 3.5);
@@ -255,21 +258,21 @@ platforms.draw = function () {
   }
 };
 
-platforms.add(0, window.innerHeight / 2 - 25, 22.5, window.innerHeight - 25);
+platforms.add(0, window.innerHeight / 2 - 25, 22.5, window.innerHeight);
 
 platforms.add(
   window.innerWidth - 25,
   window.innerHeight / 2 - 25,
   22.5,
-  window.innerHeight - 25
+  window.innerHeight
 );
 
-platforms.add(window.innerWidth / 2 - 25, 0, window.innerWidth - 25, 22.5);
+platforms.add(window.innerWidth / 2 - 25, 0, window.innerWidth, 22.5);
 
 platforms.add(
   window.innerWidth / 2 - 25,
   window.innerHeight - 25,
-  window.innerWidth - 25,
+  window.innerWidth,
   22.5
 );
 
