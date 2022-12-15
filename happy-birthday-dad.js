@@ -108,10 +108,10 @@ Dad.prototype.update = function (platforms) {
   this.yVel += this.gravity;
 
   if (this.xVel < 0) {
-    a = this.w / 6;
+    a = -this.w / 6;
   }
   if (this.xVel > 0) {
-    a = -this.w / 6;
+    a = this.w / 6;
   }
   if (this.xVel === 0) {
     a = 0;
