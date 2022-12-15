@@ -220,7 +220,7 @@ Dad.prototype.draw = function () {
     this.w / 1.75,
     this.h / 18
   );
-
+  fill(255, 255, 255);
   rect(this.x, this.y - this.h / 12, this.w / 3, this.h / 75);
   rect(this.x, this.y - this.h / 20, this.w / 3, this.h / 75);
 
