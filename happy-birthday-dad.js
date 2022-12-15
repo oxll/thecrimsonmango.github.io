@@ -255,18 +255,28 @@ platforms.draw = function () {
   }
 };
 
-platforms.add(0, 300, 22.5, 600);
+platforms.add(0, window.innerHeight / 2, 22.5, window.innerHeight);
 
-platforms.add(600, 300, 22.5, 600);
+platforms.add(
+  window.innerWidth,
+  window.innerHeight / 2,
+  22.5,
+  window.innerHeight
+);
 
-platforms.add(300, 0, 600, 22.5);
+platforms.add(window.innerWidth / 2, 0, window.innerWidth, 22.5);
 
-platforms.add(300, 600, 600, 22.5);
+platforms.add(
+  window.innerWidth / 2,
+  window.innerHeight,
+  window.innerWidth,
+  22.5
+);
 
 function draw() {
   createCanvas(window.innerWidth - 25, window.innerHeight - 25);
 
-  background(0, 175, 25);
+  background(200, 200, 200);
 
   dad.draw();
 
@@ -274,3 +284,4 @@ function draw() {
 
   platforms.draw();
 }
+inner;
