@@ -255,26 +255,26 @@ platforms.draw = function () {
   }
 };
 
-platforms.add(0, window.innerHeight / 2, 22.5, window.innerHeight);
+platforms.add(0, window.innerHeight / 2 - 25, 22.5, window.innerHeight - 25);
 
 platforms.add(
-  window.innerWidth,
-  window.innerHeight / 2,
+  window.innerWidth - 25,
+  window.innerHeight / 2 - 25,
   22.5,
-  window.innerHeight
+  window.innerHeight - 25
 );
 
-platforms.add(window.innerWidth / 2, 0, window.innerWidth, 22.5);
+platforms.add(window.innerWidth / 2 - 25, 0, window.innerWidth - 25, 22.5);
 
 platforms.add(
-  window.innerWidth / 2,
-  window.innerHeight,
-  window.innerWidth,
+  window.innerWidth / 2 - 25,
+  window.innerHeight - 25,
+  window.innerWidth - 25,
   22.5
 );
 
 function draw() {
-  createCanvas(window.innerWidth, window.innerHeight);
+  createCanvas(window.innerWidth - 25, window.innerHeight - 25);
 
   background(200, 200, 200);
 
@@ -284,4 +284,3 @@ function draw() {
 
   platforms.draw();
 }
-inner;
